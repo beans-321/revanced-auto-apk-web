@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className="App flex flex-col items-center justify-center">
       <header className="border-b-2 w-full pb-4 border-dotted">
-        <h3 className="text-3xl font-extrabold text-blue-400">
+        <h3 className="text-3xl font-extrabold text-purple-400">
          ReVanced APKs
         </h3>
       </header>
@@ -60,7 +60,7 @@ const App = () => {
         </div>
           <div className="flex flex-col justify-center items-center mt-6 border border-gray-400 p-4 rounded-3xl bg-gray-900">
             <a
-              className="flex flex-row text-xs text-blue-200 no-underline items-center"
+              className="flex flex-row text-xs text-purple-200 no-underline items-center"
               href="https://revanced.app/"
             >
               <img className="h-10 w-10" src={main_icon} alt="Main Logo" />
@@ -68,7 +68,7 @@ const App = () => {
             <p className="text-xs">
               All credits to the original developers of{" "}
               <a
-                className="text-xs text-blue-200 no-underline"
+                className="text-xs text-purple-200 no-underline"
                 href="https://revanced.app/"
               >
                 ReVanced
