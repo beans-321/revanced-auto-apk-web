@@ -9,7 +9,7 @@ const App = () => {
   const [response, setResponse] = React.useState({});
   React.useEffect(() => {
     fetch(
-      "https://api.github.com/repos/revanced-apks/build-apps/releases/latest"
+      "https://api.github.com/repos/beans-321/revanced-auto-apk/releases/latest"
     )
       .then((res) => res.json())
       .then((json) => {
@@ -19,15 +19,15 @@ const App = () => {
   return (
     <div className="App flex flex-col items-center justify-center">
       <header className="border-b-2 w-full pb-4 border-dotted">
-        <h3 className="text-3xl font-extrabold text-red-400">
-         ReVanced Apps
+        <h3 className="text-3xl font-extrabold text-blue-400">
+         ReVanced APKs
         </h3>
       </header>
       <div className="px-2 py-4 w-auto h-100">
         <div className="flex flex-col md:flex-row ">
-          <div className="flex flex-col space-y-2 md:pl-3">
-            <h1 className="text-2xl text-gray-200 font-extrabold underline pb-3">
-              Release
+          <div className="pt-5 md:pt-0 space-y-2 md:pl-5">
+            <h1 className="text-2xl text-gray-200 font-extrabold pb-3 max-w-screen-lg">
+              Downloads
             </h1>
             <h2 className="text-gray-100 text-lg">
               Date:{" "}
@@ -36,26 +36,6 @@ const App = () => {
                   new Date(response.published_at).toDateString()}
               </span>
             </h2>
-            <div className="border p-4 rounded-3xl bg-gray-900 border-gray-400 shadow-md shadow-sky-500">
-              {response.body ? (
-                <pre
-                  className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap max-w-xl text-xs md:text-base"
-                  dangerouslySetInnerHTML={{
-                    __html: marked.parseInline(
-                        response.body.replaceAll("\n", "<br /> ")
-                    ),
-                  }}
-                ></pre>
-              ) : (
-                <p className="text-gray-300 font-bold">Loading...</p>
-              )}
-            </div>
-            <p className="text-gray-300 max-w-lg text-xs">If you are having problems with latest version of release, download previous releases from our <a href="https://t.me/revanced_apks_web">Telegram channel</a> or <a href="https://github.com/revanced-apks/build-apps/releases">GitHub releases</a>.</p>
-          </div>
-          <div className="pt-5 md:pt-0 space-y-2 md:pl-5">
-            <h1 className="text-2xl text-gray-200 font-extrabold underline">
-              Downloads
-            </h1>
             <div className="space-y-4">
               {response.assets ? (
                 response.assets
@@ -80,7 +60,7 @@ const App = () => {
         </div>
           <div className="flex flex-col justify-center items-center mt-6 border border-gray-400 p-4 rounded-3xl bg-gray-900">
             <a
-              className="flex flex-row text-xs text-red-200 no-underline items-center"
+              className="flex flex-row text-xs text-blue-200 no-underline items-center"
               href="https://revanced.app/"
             >
               <img className="h-10 w-10" src={main_icon} alt="Main Logo" />
@@ -88,7 +68,7 @@ const App = () => {
             <p className="text-xs">
               All credits to the original developers of{" "}
               <a
-                className="text-xs text-red-200 no-underline"
+                className="text-xs text-blue-200 no-underline"
                 href="https://revanced.app/"
               >
                 ReVanced
@@ -96,15 +76,14 @@ const App = () => {
               .
             </p>
             <p className="pt-2 text-sm">
-              This project is open source, forked from <a href="https://github.com/j-hc/revanced-magisk-module">j-hc/revanced-magisk-module</a>, check our source at{" "}
+              This project is open source, based on <a href="https://github.com/j-hc/revanced-magisk-module">j-hc/revanced-magisk-module</a>, check our source at{" "}
               <a
                 className="text-gray-300"
-                href="https://github.com/revanced-apks"
+                href="https://github.com/beans-321/revanced-auto-apk"
               >
                 GitHub
               </a>
             </p>
-            <p>Join our <a href="https://t.me/revanced_apks_web">Telegram</a> for release updates.</p>
           </div>
         </div>
     </div>
