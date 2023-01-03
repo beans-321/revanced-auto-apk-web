@@ -58,7 +58,7 @@ const App = () => {
             </div>
           </div>
         </div>
-          <div className="flex flex-col justify-center items-center mt-6 border border-gray-400 p-4 rounded-3xl bg-gray-900">
+          <div className="flex flex-col justify-center items-center mt-6 border border-gray-400 p-4 rounded-3xl bg-purple-900">
             <a
               className="flex flex-row text-xs text-purple-200 no-underline items-center"
               href="https://revanced.app/"
