@@ -2,7 +2,7 @@
   "background_color": "#1a1919",
   "description": "Download all the latest ReVanced apps with one click.",
   "dir": "ltr",
-  "display": "fullscreen",
+  "display": "standalone",
   "name": "ReVanced Auto APK",
   "orientation": "any",
   "scope": "/",
