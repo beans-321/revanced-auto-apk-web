@@ -33,7 +33,7 @@ const App = () => {
               Date:{" "}
               <span className="font-bold">
                 {response.published_at &&
-                  new Date(response.published_at).toDateString()}
+                  new Date(response.published_at).toUTCString()}
               </span>
             </h2>
             <div className="space-y-4">
