@@ -1,5 +1,6 @@
 [{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target" : { "namespace": "android_app", "package_name": "dev.pages.revanced_auto_apk.twa",
-               "sha256_cert_fingerprints": ["53:8C:EE:A9:13:6C:61:0D:98:E0:EE:AE:82:E2:5A:63:64:B1:37:74:14:57:28:89:CC:E8:4B:19:FD:69:FC:7B"] }
-}]
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "dev.pages.revanced_auto_apk.twa",
+                     "sha256_cert_fingerprints": ["BE:BC:46:0D:7C:A7:11:48:FD:B3:D2:2A:FD:A2:3D:F0:A2:04:EE:79:E7:63:C7:0A:AC:79:BC:4E:BA:EA:BC:20"] }
+      }
+]
