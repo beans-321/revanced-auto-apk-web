@@ -18,7 +18,7 @@ const App = () => {
   }, []);
   return (
     <div className="App flex flex-col items-center justify-center">
-      <header className="border-b-2 w-full pb-4 border-dotted">
+      <header className="border-b-2 w-full pb-4 border-none">
         <h3 className="text-3xl font-extrabold text-purple-400">
          ReVanced APKs
         </h3>
