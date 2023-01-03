@@ -5,16 +5,23 @@ const Download = (props) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      viewBox="0 0 16 16"
-      strokeWidth={1.5}
+      viewBox="0 0 24 24"
+      strokeWidth={2}
       stroke="currentColor"
       className={props.style ? props.style : "w-6 h-6"}
     >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M 7 2 L 7 9.2929688 L 4.3535156 6.6464844 L 3.6464844 7.3535156 L 7.5 11.207031 L 11.353516 7.3535156 L 10.646484 6.6464844 L 8 9.2929688 L 8 2 L 7 2 z M 3 13 L 3 14 L 3.5 14 L 11.5 14 L 12 14 L 12 13 L 11.5 13 L 3.5 13 L 3 13 z"
-      />
+      <polyline
+         points="22 14 22 22 2 22 2 14"
+         id="polyline2" />
+      <polyline
+         points="17 12 12 17 7 12"
+         id="polyline4" />
+      <line
+         x1="12"
+         y1="17"
+         x2="12"
+         y2="3"
+         id="line6" />
     </svg>
   );
 };
