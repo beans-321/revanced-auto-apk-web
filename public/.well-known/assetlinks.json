@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "dev.pages.revanced_auto_apk.twa",
+               "sha256_cert_fingerprints": ["53:8C:EE:A9:13:6C:61:0D:98:E0:EE:AE:82:E2:5A:63:64:B1:37:74:14:57:28:89:CC:E8:4B:19:FD:69:FC:7B"] }
+}]
