@@ -50,5 +50,10 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('/sw.js')
+    }
+  </script>
   </body>
 </html>
