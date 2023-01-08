@@ -7,6 +7,8 @@ import main_icon from "./main_icon.png";
 
 const App = () => {
   const [response, setResponse] = React.useState({});
+  const [response2, setResponse2] = React.useState({});
+  const [response3, setResponse3] = React.useState({});
   React.useEffect(() => {
     fetch(
       "https://api.github.com/repos/beans-321/revanced-auto-apk/releases/latest"
@@ -14,6 +16,24 @@ const App = () => {
       .then((res) => res.json())
       .then((json) => {
         setResponse(json);
+      });
+  }, []);
+  React.useEffect(() => {
+    fetch(
+      "https://api.github.com/repos/revanced/revanced-patches/releases/latest"
+    )
+      .then((res) => res.json())
+      .then((json) => {
+        setResponse2(json);
+      });
+  }, []);
+  React.useEffect(() => {
+    fetch(
+      "https://api.github.com/repos/inotia00/revanced-patches/releases/latest"
+    )
+      .then((res) => res.json())
+      .then((json) => {
+        setResponse3(json);
       });
   }, []);
   return (
@@ -55,6 +75,49 @@ const App = () => {
               ) : (
                 <p className="text-gray-200">Loading...</p>
               )}
+            <div>
+            <h1 className="text-2xl text-gray-200 font-extrabold pb-3 max-w-screen-lg">
+              Changelogs
+            </h1>
+            <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base">
+              ReVanced Patches {" "}
+              <span className="font-bold">
+                {response2.tag_name}:
+              </span>
+            </h2>
+            <br />
+              {response2.body ? (
+                <pre
+                  className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base"
+                  dangerouslySetInnerHTML={{
+                    __html: marked.parseInline(
+                        response2.body
+                    ),
+                  }}
+                ></pre>
+              ) : (
+                <p className="text-gray-300 font-bold">Loading...</p>
+              )}
+            <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base">
+              ReVanced Extended Patches {" "}
+              <span className="font-bold">
+                {response3.tag_name}:
+              </span>
+            </h2>
+            <br />
+              {response3.body ? (
+                <pre
+                  className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base"
+                  dangerouslySetInnerHTML={{
+                    __html: marked.parseInline(
+                        response3.body
+                    ),
+                  }}
+                ></pre>
+              ) : (
+                <p className="text-gray-300 font-bold">Loading...</p>
+              )}
+            </div>
             </div>
           </div>
         </div>
