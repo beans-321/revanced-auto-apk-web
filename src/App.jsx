@@ -82,7 +82,10 @@ const App = () => {
             <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base">
               ReVanced Patches {" "}
               <span className="font-bold">
-                {response2.tag_name}:
+                {response2.tag_name}
+                &nbsp; 
+                {response2.published_at &&
+                  new Date(response2.published_at).toUTCString()}:
               </span>
             </h2>
             <br />
@@ -101,7 +104,10 @@ const App = () => {
             <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base">
               ReVanced Extended Patches {" "}
               <span className="font-bold">
-                {response3.tag_name}:
+                {response3.tag_name}
+                &nbsp; 
+                {response3.published_at &&
+                  new Date(response3.published_at).toUTCString()}:
               </span>
             </h2>
             <br />
