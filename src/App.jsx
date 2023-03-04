@@ -46,7 +46,7 @@ const App = () => {
       <div className="px-2 py-4 w-auto h-100">
         <div className="flex flex-col md:flex-row ">
           <div className="pt-5 md:pt-0 space-y-2 md:pl-5">
-            <h1 className="text-2xl text-gray-200 font-extrabold pb-3 max-w-screen-lg">
+            <h1 className="justify-center items-center text-2xl text-gray-200 font-extrabold pb-3">
               Downloads
             </h1>
             <h2 className="text-gray-100 text-lg">
@@ -76,10 +76,10 @@ const App = () => {
                 <p className="text-gray-200">Loading...</p>
               )}
             <div>
-            <h1 className="text-2xl text-gray-200 font-extrabold pb-3 max-w-screen-lg">
+            <h1 className="justify-center items-center text-2xl text-gray-200 font-extrabold pb-3">
               Changelogs
             </h1>
-            <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base">
+            <h2 className="justify-center items-center text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm ">
               ReVanced Patches {" "}
               <span className="font-bold">
                 {response2.tag_name}
