@@ -79,7 +79,7 @@ const App = () => {
             <h1 className="justify-center items-center text-2xl text-gray-200 font-extrabold pb-3">
               Changelogs
             </h1>
-            <h2 className="justify-center items-center text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm ">
+            <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base">
               ReVanced Patches {" "}
               <span className="font-bold">
                 {response2.tag_name}
