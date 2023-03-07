@@ -1,5 +1,4 @@
 {
-  "background_color": "#1a1919",
   "description": "Download all the latest ReVanced apps with one click.",
   "dir": "ltr",
   "display": "standalone",
@@ -8,7 +7,6 @@
   "scope": "/",
   "short_name": "ReVanced Auto APK",
   "start_url": "https://revanced-auto-apk.pages.dev",
-  "theme_color": "#7519af",
   "categories": [
     "utilities"
   ],
@@ -29,7 +27,13 @@
       "src": "/icon.png",
       "type": "image/png",
       "sizes": "1024x1024",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
     }
   ],
   "shortcuts": []
