@@ -39,7 +39,7 @@ const App = () => {
   return (
     <div className="App flex flex-col items-center justify-center">
       <header className="border-b-2 w-full pb-4 border-none">
-        <h3 className="text-3xl font-extrabold text-purple-400">
+        <h3 className="text-3xl font-extrabold text-red-500">
          ReVanced APKs
         </h3>
       </header>
@@ -127,9 +127,9 @@ const App = () => {
             </div>
           </div>
         </div>
-          <div className="flex flex-col justify-center items-center mt-6 border border-gray-400 p-4 rounded-3xl bg-purple-900">
+          <div className="flex flex-col justify-center items-center mt-6 ">
             <a
-              className="flex flex-row text-xs text-purple-200 no-underline items-center"
+              className="flex flex-row text-xs text-red-500 no-underline items-center"
               href="https://revanced.app/"
             >
               <img className="h-10 w-10" src={main_icon} alt="Main Logo" />
@@ -137,7 +137,7 @@ const App = () => {
             <p className="text-xs">
               All credits to the original developers of{" "}
               <a
-                className="text-xs text-purple-200 no-underline"
+                className="text-xs text-red-500 no-underline"
                 href="https://revanced.app/"
               >
                 ReVanced
@@ -145,9 +145,9 @@ const App = () => {
               .
             </p>
             <p className="pt-2 text-sm">
-              This project is open source, based on <a href="https://github.com/j-hc/revanced-magisk-module">j-hc/revanced-magisk-module</a>, check our source at{" "}
+              This project is open source, based on <a className="text-red-500 no-underline" href="https://github.com/j-hc/revanced-magisk-module">j-hc/revanced-magisk-module</a>, check our source at{" "}
               <a
-                className="text-gray-300"
+                className="text-red-500 no-underline"
                 href="https://github.com/beans-321/revanced-auto-apk"
               >
                 GitHub
