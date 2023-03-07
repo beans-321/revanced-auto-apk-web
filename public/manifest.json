@@ -1,4 +1,5 @@
 {
+  "background_color": "#1a202e",
   "description": "Download all the latest ReVanced apps with one click.",
   "dir": "ltr",
   "display": "standalone",
@@ -7,6 +8,7 @@
   "scope": "/",
   "short_name": "ReVanced Auto APK",
   "start_url": "https://revanced-auto-apk.pages.dev",
+  "theme_color": "#1a202e",
   "categories": [
     "utilities"
   ],
