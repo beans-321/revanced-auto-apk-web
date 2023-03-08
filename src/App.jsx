@@ -37,26 +37,26 @@ const App = () => {
       });
   }, []);
   return (
-    <div className="App flex flex-col items-center justify-center">
-      <header className="border-b-2 w-full pb-4 border-none">
-        <h3 className="text-3xl font-extrabold text-red-500">
+    <div className="overflow-hidden App flex flex-col items-center justify-center">
+      <header className="overflow-hidden border-b-2 w-full pb-4 border-none">
+        <h3 className="overflow-hidden text-3xl font-extrabold text-red-500">
          ReVanced APKs
         </h3>
       </header>
-      <div className="px-2 py-4 w-auto h-100">
-        <div className="flex flex-col md:flex-row ">
-          <div className="pt-5 md:pt-0 space-y-2 md:pl-5">
-            <h1 className="justify-center items-center text-2xl text-gray-200 font-extrabold pb-3">
+      <div className="overflow-hidden px-2 py-4 w-auto h-100">
+        <div className="overflow-hidden flex flex-col md:flex-row ">
+          <div className="overflow-hidden pt-5 md:pt-0 space-y-2 md:pl-5">
+            <h1 className="overflow-hidden justify-center items-center text-2xl text-gray-200 font-extrabold pb-3">
               Downloads
             </h1>
-            <h2 className="text-gray-100 text-lg">
+            <h2 className="overflow-hidden text-gray-100 text-lg">
               Date:{" "}
-              <span className="font-bold">
+              <span className="overflow-hidden font-bold">
                 {response.published_at &&
                   new Date(response.published_at).toUTCString()}
               </span>
             </h2>
-            <div className="space-y-4">
+            <div className="overflow-hidden space-y-4">
               {response.assets ? (
                 response.assets
                   .slice()
@@ -73,25 +73,24 @@ const App = () => {
                     );
                   })
               ) : (
-                <p className="text-gray-200">Loading...</p>
+                <p className="overflow-hidden text-gray-200">Loading...</p>
               )}
             <div>
-            <h1 className="justify-center items-center text-2xl text-gray-200 font-extrabold pb-3">
+            <h1 className="overflow-hidden justify-center items-center text-2xl text-gray-200 font-extrabold pb-3">
               Changelogs
             </h1>
-            <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base p-3">
+            <h2 className="overflow-hidden text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base p-3">
               ReVanced Patches {" "}
-              <span className="font-bold">
+              <span className="overflow-hidden font-bold">
                 {response2.tag_name}
                 &nbsp; 
                 {response2.published_at &&
                   new Date(response2.published_at).toUTCString()}:
               </span>
             </h2>
-            <br />
               {response2.body ? (
                 <pre
-                  className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base w-screen p-3"
+                  className="overflow-hidden text-gray-300 marked font-bold font-mono text-start whitespace-pre-wrap text-sm md:text-base w-screen p-3"
                   dangerouslySetInnerHTML={{
                     __html: marked.parseInline(
                         response2.body
@@ -99,21 +98,20 @@ const App = () => {
                   }}
                 ></pre>
               ) : (
-                <p className="text-gray-300 font-bold">Loading...</p>
+                <p className="overflow-hidden text-gray-300 font-bold">Loading...</p>
               )}
-            <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base p-3">
+            <h2 className="overflow-hidden text-gray-300 marked font-bold font- text-start whitespace-pre-wrap text-sm md:text-base p-3">
               ReVanced Extended Patches {" "}
-              <span className="font-bold">
+              <span className="overflow-hidden font-bold">
                 {response3.tag_name}
                 &nbsp; 
                 {response3.published_at &&
                   new Date(response3.published_at).toUTCString()}:
               </span>
             </h2>
-            <br />
               {response3.body ? (
                 <pre
-                  className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base w-screen p-3"
+                  className="overflow-hidden text-gray-300 marked font-bold font-mono text-start whitespace-pre-wrap text-sm md:text-base w-screen p-3"
                   dangerouslySetInnerHTML={{
                     __html: marked.parseInline(
                         response3.body
@@ -121,33 +119,33 @@ const App = () => {
                   }}
                 ></pre>
               ) : (
-                <p className="text-gray-300 font-bold">Loading...</p>
+                <p className="overflow-hidden text-gray-300 font-bold">Loading...</p>
               )}
             </div>
             </div>
           </div>
         </div>
-          <div className="flex flex-col justify-center items-center mt-6 ">
+          <div className="overflow-hidden flex flex-col justify-center items-center mt-6 ">
             <a
-              className="flex flex-row text-xs text-red-500 no-underline items-center"
+              className="overflow-hidden flex flex-row text-xs text-red-500 no-underline items-center"
               href="https://revanced.app/"
             >
-              <img className="h-10 w-10" src={main_icon} alt="Main Logo" />
+              <img className="overflow-hidden h-10 w-10" src={main_icon} alt="Main Logo" />
             </a>
-            <p className="text-xs">
+            <p className="overflow-hidden text-xs">
               All credits to the original developers of{" "}
               <a
-                className="text-xs text-red-500 no-underline"
+                className="overflow-hidden text-xs text-red-500 no-underline"
                 href="https://revanced.app/"
               >
                 ReVanced
               </a>
               .
             </p>
-            <p className="pt-2 text-sm">
-              This project is open source, based on <a className="text-red-500 no-underline" href="https://github.com/j-hc/revanced-magisk-module">j-hc/revanced-magisk-module</a>, check our source at{" "}
+            <p className="overflow-hidden pt-2 text-sm">
+              This project is open source, based on <a className="overflow-hidden text-red-500 no-underline" href="https://github.com/j-hc/revanced-magisk-module">j-hc/revanced-magisk-module</a>, check our source at{" "}
               <a
-                className="text-red-500 no-underline"
+                className="overflow-hidden text-red-500 no-underline"
                 href="https://github.com/beans-321/revanced-auto-apk"
               >
                 GitHub
