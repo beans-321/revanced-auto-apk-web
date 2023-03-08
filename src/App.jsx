@@ -56,7 +56,7 @@ const App = () => {
                   new Date(response.published_at).toUTCString()}
               </span>
             </h2>
-            <div className="overflow-hidden space-y-4">
+            <div className="overflow-hidden">
               {response.assets ? (
                 response.assets
                   .slice()
