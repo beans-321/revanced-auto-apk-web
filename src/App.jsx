@@ -79,7 +79,7 @@ const App = () => {
             <h1 className="justify-center items-center text-2xl text-gray-200 font-extrabold pb-3">
               Changelogs
             </h1>
-            <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base">
+            <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base p-3">
               ReVanced Patches {" "}
               <span className="font-bold">
                 {response2.tag_name}
@@ -91,7 +91,7 @@ const App = () => {
             <br />
               {response2.body ? (
                 <pre
-                  className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base"
+                  className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base w-screen p-3"
                   dangerouslySetInnerHTML={{
                     __html: marked.parseInline(
                         response2.body
@@ -101,7 +101,7 @@ const App = () => {
               ) : (
                 <p className="text-gray-300 font-bold">Loading...</p>
               )}
-            <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base">
+            <h2 className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base p-3">
               ReVanced Extended Patches {" "}
               <span className="font-bold">
                 {response3.tag_name}
@@ -113,7 +113,7 @@ const App = () => {
             <br />
               {response3.body ? (
                 <pre
-                  className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base"
+                  className="text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base w-screen p-3"
                   dangerouslySetInnerHTML={{
                     __html: marked.parseInline(
                         response3.body
