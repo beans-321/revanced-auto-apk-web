@@ -77,6 +77,9 @@ const App = () => {
                 <p className="overflow-hidden text-gray-200">Loading...</p>
               )}
             <div>
+            <h1>
+              &nbsp;
+            </h1>
             <h1 className="overflow-hidden justify-center items-center text-2xl text-gray-200 font-extrabold pb-3">
               Changelogs
             </h1>
