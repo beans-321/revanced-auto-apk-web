@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./AppStyle.css";
 import React from "react";
+import moment from "moment";
 import AppComp from "./components/AppComp";
 import { marked } from "marked";
 import main_icon from "./main_icon.png";
@@ -50,10 +51,10 @@ const App = () => {
               Downloads
             </h1>
             <h2 className="overflow-hidden text-gray-100 text-lg">
-              Date:{" "}
-              <span className="overflow-hidden font-bold">
+              Uploaded {" "}
+              <span className="overflow-hidden">
                 {response.published_at &&
-                  new Date(response.published_at).toUTCString()}
+                  moment(new Date(response.published_at)).fromNow()}
               </span>
             </h2>
             <div className="overflow-hidden">
@@ -80,12 +81,12 @@ const App = () => {
               Changelogs
             </h1>
             <h2 className="overflow-hidden text-gray-300 marked font-bold font-sans text-start whitespace-pre-wrap text-sm md:text-base p-3">
-              ReVanced Patches {" "}
+              ReVanced Patches{" "}
               <span className="overflow-hidden font-bold">
                 {response2.tag_name}
-                &nbsp; 
+                &nbsp;released&nbsp;
                 {response2.published_at &&
-                  new Date(response2.published_at).toUTCString()}:
+                  moment(new Date(response2.published_at)).fromNow()}
               </span>
             </h2>
               {response2.body ? (
@@ -101,12 +102,12 @@ const App = () => {
                 <p className="overflow-hidden text-gray-300 font-bold">Loading...</p>
               )}
             <h2 className="overflow-hidden text-gray-300 marked font-bold font- text-start whitespace-pre-wrap text-sm md:text-base p-3">
-              ReVanced Extended Patches {" "}
+              ReVanced Extended Patches{" "}
               <span className="overflow-hidden font-bold">
                 {response3.tag_name}
-                &nbsp; 
+                &nbsp;released&nbsp;
                 {response3.published_at &&
-                  new Date(response3.published_at).toUTCString()}:
+                  moment(new Date(response3.published_at)).fromNow()}
               </span>
             </h2>
               {response3.body ? (
