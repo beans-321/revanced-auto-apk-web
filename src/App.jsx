@@ -94,7 +94,7 @@ const App = () => {
             </h2>
               {response2.body ? (
                 <pre
-                  className="overflow-hidden text-gray-300 marked font-bold font-mono text-start whitespace-pre-wrap text-sm md:text-base w-screen p-3 no-underline"
+                  className="overflow-hidden text-gray-300 marked font-bold font-mono text-start whitespace-pre-wrap text-sm md:text-base w-screen p-3"
                   dangerouslySetInnerHTML={{
                     __html: marked.parseInline(
                         response2.body
